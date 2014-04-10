@@ -1,5 +1,6 @@
-var gigya_secret = "";
-var gigya_apikey="";
+var gig = require('./gigyainfo.json');
+var gigya_secret = gig.apikey;
+var gigya_apikey=gig.secret;
 
 data = require("./ids");
 var https=require('https');
