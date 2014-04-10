@@ -56,6 +56,7 @@ app.get('/', function(req, res){
 app.get('/close', function(req, res){
     fs.writeFile('errors.txt',error,function err(error){});
     fs.writeFile('successes.txt',success,function err(error){});
+    res.send("OK, files written");
 });
 
 
